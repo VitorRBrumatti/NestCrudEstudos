@@ -1,0 +1,26 @@
+### list developers
+GET http://localhost:3000/developers
+
+### get developer
+GET http://localhost:3000/developers/dev_OuvdDNitzH2Z3PSjJjSqt
+
+### create developers
+POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+  "name" : "Vitor Brumatti",
+  "email": "vitor.vitor@email.com",
+  "dateOfBirth": "1990-01-01"
+}
+
+### update developers
+PATCH http://localhost:3000/developers/dev_c7u3c2xZ60spxUr97XHm7
+Content-Type: application/json
+
+{
+  "email": "teste@email.com"
+}
+
+### delete developers
+DELETE http://localhost:3000/developers/dev_OuvdDNitzH2Z3PSjJjSqt
